@@ -1,0 +1,12 @@
+\source\Realtek\Codec_8619\HDXLV.inf PnpUtil return code 3010
+\source\Realtek\Codec_8619\HDXLVSST.inf PnpUtil return code 0
+\source\Realtek\Codec_8619\HDXRTSST.inf PnpUtil return code 0
+\source\Realtek\CodecExtOem_RTK_8619\HDX_LenovoExt_DOLBY_FORTE.inf PnpUtil return code 0
+\source\Realtek\RealtekAPO_668\RealtekAPO.inf PnpUtil return code 0
+\source\Realtek\RealtekHSA_166\RealtekHSA.inf PnpUtil return code 0
+\source\Realtek\RealtekService_147\RealtekService.inf PnpUtil return code 0
+\source\Dolby\ext_realtek_lenovo_thinkpad\ext_thinkpad_AIO_rtk_rs4_rs5_v4.104.514.47\dax3_ext_rtk_lenovo_jp.inf PnpUtil return code 0
+\source\Dolby\swc_factory\swc_aposvc_rs4_rs5_ga222_v265\dax3_swc_aposvc.inf PnpUtil return code 0
+\source\Dolby\swc_factory\swc_hsa_rs4_rs5_ga221_v255\dax3_swc_hsa.inf PnpUtil return code 0
+\source\Forte\ExtensionInf\ThinkPad\OemXAudioExtFM_TH.inf PnpUtil return code 0
+\source\Forte\FMAPO\FMAPO.inf PnpUtil return code 0

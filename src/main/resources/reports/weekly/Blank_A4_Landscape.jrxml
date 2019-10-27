@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e444bcc7-42f4-4128-8cac-746d1db4d5dd">
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="empresas" class="java.lang.String"/>
+	<parameter name="massivo" class="java.lang.String"/>
+	<parameter name="top" class="java.lang.String"/>
+	<parameter name="grandTotal" class="java.lang.String"/>
+	<parameter name="monthlyIncreaseDecrease" class="java.lang.String"/>
+	<parameter name="grandTotalSummary" class="java.math.BigDecimal"/>
+	<parameter name="topSummary" class="java.math.BigDecimal"/>
+	<parameter name="massivoSummary" class="java.math.BigDecimal"/>
+	<parameter name="empresasSummary" class="java.math.BigDecimal"/>
+	<parameter name="coresLaterais" class="java.awt.Image"/>
+	<parameter name="logo" class="java.awt.Image"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="month" class="java.lang.String"/>
+	<field name="empresas" class="java.math.BigDecimal"/>
+	<field name="massivo" class="java.math.BigDecimal"/>
+	<field name="top" class="java.math.BigDecimal"/>
+	<field name="grandTotal" class="java.math.BigDecimal"/>
+	<field name="monthlyIncreaseDecrease" class="java.math.BigDecimal"/>
+	<pageHeader>
+		<band height="25" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="0" y="0" width="580" height="25" uuid="58d833d9-1cba-4bc6-94f6-55f2415c3d13">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{coresLaterais}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="460" y="0" width="320" height="25" uuid="078806e3-01d9-4cf3-acea-ad170f5d79a4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial Narrow" size="19" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Won Opportunities by Segment
+]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="0" width="780" height="20" forecolor="#0070C0" backcolor="#0070C0" uuid="0416c102-016e-4440-b86d-9a0b120e3c05">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#0070C0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="91ae6df7-c787-4edc-b1a2-d88b4720d249">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="120" height="20" forecolor="#FFFFFF" uuid="a9db9d05-d17a-4206-967c-2ac919256813">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{massivo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="110" height="20" forecolor="#FFFFFF" uuid="e0c86106-1e94-418a-8f24-25f20802fe96">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="130" height="20" forecolor="#FFFFFF" uuid="ea58cb4a-d05e-469e-bcb9-84c86ba83b03">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{top}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="140" height="20" forecolor="#FFFFFF" uuid="1e4bf3b7-ff16-4ed1-8446-308c6c463545">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grandTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="0" width="140" height="20" forecolor="#FFFFFF" uuid="56d74420-e62f-4364-a488-f7d071986712">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{monthlyIncreaseDecrease}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="0" width="780" height="20" forecolor="#FFFFFF" backcolor="#F2F2F2" uuid="26824aaa-c0a1-4a80-be8d-887c2d6b1062">
+					<printWhenExpression><![CDATA[$F{month}.startsWith( "Quarter" )]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="10" y="0" width="120" height="20" uuid="f0e4a0d0-96dd-4892-a82a-93b644dd4fad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField pattern="$ #,##0.00#" isBlankWhenNull="true">
+				<reportElement x="130" y="0" width="110" height="20" uuid="a24c0f46-b978-49ed-8e45-73198fef050e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($F{empresas}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField pattern="$ #,##0.00#" isBlankWhenNull="true">
+				<reportElement x="240" y="0" width="120" height="20" uuid="7b7fabba-1f0a-4eff-baaf-eeddee82d66e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($F{massivo}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField pattern="$ #,##0.00#" isBlankWhenNull="true">
+				<reportElement x="360" y="0" width="130" height="20" uuid="399c0017-e77b-4ae8-a44d-5fec12240741">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($F{top}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField pattern="$ #,##0.00#" isBlankWhenNull="true">
+				<reportElement x="490" y="0" width="140" height="20" uuid="9e656450-9c3a-4842-9ea6-ec2658707d77">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($F{grandTotal}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00%" isBlankWhenNull="true">
+				<reportElement x="630" y="0" width="140" height="20" forecolor="#050505" uuid="98d0a31a-c93b-424e-9ba1-8131d84b8a22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0dc1142-02da-427d-895f-fc02d5328754"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{monthlyIncreaseDecrease}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="0" width="780" height="20" forecolor="#183147" backcolor="#183147" uuid="e8b65198-fbb6-45cf-becb-cf4d83d10ec9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#C2CED9"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="720" y="5" width="50" height="13" uuid="b3cded63-f0eb-4ff3-9498-c388c9de8293"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="30">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement x="0" y="0" width="780" height="30" forecolor="#C2CED9" backcolor="#C2CED9" uuid="bfd1207a-ee24-4272-afdb-833ac1250ee9"/>
+				<graphicElement>
+					<pen lineColor="#C2CED9"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="c3acae3f-431e-4fb0-b5ed-777af1f06e07"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="0" width="110" height="30" uuid="1d90eafc-3ad2-44a6-bc8c-102de0b85d8e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($P{empresasSummary}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="120" height="30" uuid="f942e50f-9a26-42e1-b07e-2369a1bbf5bb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($P{massivoSummary}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="130" height="30" uuid="02c21a4f-bcb1-41c4-b532-fe3217e94daa"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($P{topSummary}.doubleValue())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="140" height="30" uuid="561fa86b-b152-42e1-a33d-d1d8ae079cb1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("$ #,##0.00").format($P{grandTotalSummary}.doubleValue())]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
